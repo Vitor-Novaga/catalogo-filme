@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+body{
+    background-color: rgb(136, 129, 154);
+}
+:root{
+
+    --cor-sucesso:#4caf50;
+    --cor-erro:#ff4d4d;
+    --cor-branco: white;
+    --cor-vinho: rgb(78, 43, 124);
+    --cor-bisque: rgb(119, 117, 125);
+}
+
+body{
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    
+}
+
+.container{
+
+    /* width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box; */
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d6d3d3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.notificacao{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: var(--cor-branco);
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+
+    &.sucesso{
+        background-color: var(--cor-sucesso);
+    }
+    &.erro{
+        background-color: var(--cor-erro);
+        }
+}
+.acao{
+    display: flex;
+    justify-content: right;
+
+    a{
+        text-decoration: unset;
+    }
+
+    button{
+        background-color: rgb(136, 129, 154);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+.table{
+    width: 100%;
+    border-color: aliceblue;
+    border-collapse: collapse;
+
+    thead, th, tbody, td, tr{
+        border-color: inherit;
+        border-style: solid;
+        border-width: 0;
+    }
+
+    th,td{
+        border-bottom-width: 2px;
+        padding: 0.5rem;
+        text-align: left;
+    }
+    /*seleciona todas as linhas pares do corpo da tabela> even= par odd = impar */
+    tbody tr:nth-child(even){
+        background-color: var(--cor-bisque);
+    }
+
+    tbody tr:hover{
+        background-color: var(--cor-vinho);
+    }
+}
+
+.img{
+    width:100px;
+    height:auto;
+}
+
+.img_view{
+    width:300px;
+    height:auto;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+a{
+    color: #cbb9b9;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover{
+    opacity: 0.7;
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    letter-spacing: 2px;
+}
+
+.container_card{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container_card .cards{
+    border: 5px solid grey;
+    width: 200px;
+    /* display: flex; */
+    flex-direction: row;
+    border-radius: 15px;
+    padding: 10px;
+    gap: 15px;
+    background-color: rgb(99, 93, 111);
+    color: black;
+    transition: 1s;
+}
+
+.container_card .cards{
+    text-align: justify;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.cardc {
+    background: #d6d3d3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+
+    div {
+        margin-bottom: 15px;
+
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input{
+        background: #a4a3a3;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+    }
+
+    button {
+        background: #324232;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #45a049;
+    }
+}
+
+.detalhes-film {
+    margin-bottom: 20px;
+
+    h3 {
+        font-size: 24px;
+        color: #333;
+    }
+
+    p {
+        font-size: 18px;
+        color: #666;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 10px;
+
+    }
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+
+    button {
+        background-color: rgb(136, 129, 154);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #566a81;
+    }
+
+    .material-symbols-outlined {
+        vertical-align: middle;
+    }
+}
