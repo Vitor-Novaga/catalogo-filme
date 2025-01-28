@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $sucesso = FALSE;
     
-    if(!empty($_["id"])){
+    if(!empty($_POST["id"])){
 
         $nome = $_POST["nome"];
         $ano = $_POST["ano"];

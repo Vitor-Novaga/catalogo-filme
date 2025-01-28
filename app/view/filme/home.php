@@ -46,7 +46,7 @@ $filmes = $filmeModel->buscarTodos();
     <section class="container_card">
         <?php foreach($filmes as $filme) {?>
             <div class="cards">
-            <img class="img"src="<?php echo $filme->imagem ?>" alt="Imagem do Filme" >
+            <a href="/vitorb/catalogo/app/view/filme/visualizar.php?id=<?php echo$filme->id?>"><img class="img"src="<?php echo $filme->imagem ?>" alt="Imagem do Filme" ></a>
             <h2 class="title"><?php echo $filme->nome ?></h2>
             <span class="descricao"><?php echo $filme->descricao ?></span>
             </div>
